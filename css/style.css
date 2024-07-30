@@ -1,0 +1,22 @@
+/* variables declared here - these are the colors for our main page, as well as the font stacks and sizes. */
+:root {
+    --darkGunmetal: #1E2933;
+    --darkJungleGreen: #192127;
+    --dandelion: #FFDC67;
+    --queenBlue: #3572a5;
+    --brightGray: #e6e8ea;
+    --spaceCadet: #1C3B56;
+    --gargoyleGas: #FFD343;
+    --iceberg: #75A8D3;
+    --lotion: #FCFCFC;
+    --outerSpace: #444444;
+    --steelBlue: #3776ab;
+    --jasmine: #ffe079;
+    --graniteGray: #666666;
+    --gainsboro: #dde0e2 ;
+    --nickel: #737373;
+    --lightCobaltBlue: #89b4d9;
+    --fontSize: 16px;
+    --lora: Lora;
+    --sans: Source, sans-serif;
+}
