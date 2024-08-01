@@ -13,7 +13,7 @@
     --steelBlue: #3776ab;
     --jasmine: #ffe079;
     --graniteGray: #666666;
-    --gainsboro: #dde0e2 ;
+    --gainsboro: #dde0e2;
     --nickel: #737373;
     --lightCobaltBlue: #89b4d9;
     --fontSize: 16px;
@@ -44,23 +44,24 @@ html {
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-size: var(--fontSize);
     font-family: var(--sans);
 }
 
-header{
+header {
     background-color: var(--darkGunmetal);
     border-bottom: 1px solid var(--border-bottom-color);
 }
 
-header .container{
+header .container {
     display: flex;
     list-style-type: none;
 }
-header .container li{
+
+header .container li {
     padding: 12px;
     border-left: 1px solid var(--default-border-color);
     border-right: 1px solid var(--border-right-color);
@@ -71,40 +72,46 @@ header .container li{
     width: 100%;
 }
 
-header .container li::before{
+header .container li::before {
     content: "";
-    width: 0; 
-    height: 0; 
-    border-left:7px solid transparent;
-    border-right:7px solid transparent;
-    border-top:7px solid transparent;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid transparent;
     position: absolute;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
     transition: 0.1s ease all;
 }
-.Python::before{
+
+.Python::before {
     border-top-color: var(--steelBlue) !important;
 }
-.PSF:hover::before{
+
+.PSF:hover::before {
     border-top-color: var(--psf-hover-color) !important;
 }
-.Docs:hover::before{
+
+.Docs:hover::before {
     border-top-color: var(--gargoyleGas) !important;
 }
-.PyPl:hover::before{
+
+.PyPl:hover::before {
     border-top-color: var(--pypl-hover-color) !important;
 }
-.Jobs:hover::before{
+
+.Jobs:hover::before {
     border-top-color: var(--jobs-hover-color) !important;
 }
-.Community:hover::before{
+
+.Community:hover::before {
     border-top-color: var(--community-hover-color) !important;
 }
 
 
-.Python{
+.Python {
     border-top-color: var(--steelBlue) !important;
     background-image: linear-gradient(var(--gradient-start) 10%, var(--gradient-end) 90%);
 }
@@ -146,7 +153,128 @@ header .container li a:hover {
     color: var(--brightGray);
 }
 
-.header-nav {
+.box {
     max-width: 1220px;
     margin: auto;
+}
+
+.main {
+    background-image: var(--gradient-background);
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 5px;
+}
+
+.left-article,
+.right-article {
+    width: 100%;
+}
+
+.right-article {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 100px;
+}
+
+.search-wrapper {
+    background-color: #1e2933;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-top: 1px solid #2d3e4d;
+    border-bottom: 1px solid #070a0c;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    overflow: hidden;
+}
+
+.search-wrapper-element {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.search-wrapper-element input {
+    padding: 0.5rem;
+}
+
+.search-wrapper-element i {
+    color: #78797a;
+    font-size: 1.5rem;
+}
+
+.go {
+    background-color: #2b5b84;
+    outline: 0;
+    border: 0;
+    padding: 0.8rem;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    background-image: linear-gradient(#316998 10%, #244e71 90%);
+}
+
+.navigation-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-right: 1rem;
+    position: relative;
+}
+
+section .navigation-container li:hover {
+    background: #2b5b83;
+}
+
+.donate-btn {
+    background-color: #ffd343;
+    padding: 6px 12px 5px;
+    background-image: linear-gradient(#ffeba9 10%, #ffd343 90%);
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #dca900;
+}
+
+.socialize-btn {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.search-wrapper-element::after {
+    content: "";
+    height: 200px;
+    position: absolute;
+    width: 1px;
+    background-color: #151b1f;
+    right: 0;
+}
+
+.navigation-section {
+    background-color: #2d618c;
+    background-image: linear-gradient(#3776ab 30%, #2d618c 95%);
+    border-top: 1px solid #629ccd;
+    border-bottom: 1px solid #18334b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.navigation-section ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navigation-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
 }
