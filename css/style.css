@@ -1,22 +1,194 @@
-/* variables declared here - these are the colors for our main page, as well as the font stacks and sizes. */
-:root {
-    --darkGunmetal: #1E2933;
-    --darkJungleGreen: #192127;
-    --dandelion: #FFDC67;
-    --queenBlue: #3572a5;
-    --brightGray: #e6e8ea;
-    --spaceCadet: #1C3B56;
-    --gargoyleGas: #FFD343;
-    --iceberg: #75A8D3;
-    --lotion: #FCFCFC;
-    --outerSpace: #444444;
-    --steelBlue: #3776ab;
-    --jasmine: #ffe079;
-    --graniteGray: #666666;
-    --gainsboro: #dde0e2 ;
-    --nickel: #737373;
-    --lightCobaltBlue: #89b4d9;
-    --fontSize: 16px;
-    --lora: Lora;
-    --sans: Source, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #4b8bbe;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-left, .header-right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-left {
+    width: 70%;
+}
+
+.header-right {
+    width: 28%;
+    text-align: right;
+}
+
+.logo {
+    width: 140px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-nav {
+    display: inline-block;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.search-form {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #306998;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.hero {
+    background-color: #306998;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ffde57;
+    color: #306998;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.highlights {
+    padding: 50px 0;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.highlights .highlight {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    vertical-align: top;
+}
+
+.highlight h2 {
+    font-size: 24px;
+    color: #306998;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #306998;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.news {
+    padding: 50px 0;
+}
+
+.news h2 {
+    font-size: 28px;
+    color: #306998;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.news-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.news-item h3 a {
+    color: #306998;
+    text-decoration: none;
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    background-color: #4b8bbe;
+    color:
