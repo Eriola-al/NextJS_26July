@@ -278,3 +278,28 @@ section .navigation-container li:hover {
     display: inline-block;
     padding: 1rem;
 }
+
+.carousel {
+    display: flex;
+    justify-content: center;
+
+}
+
+.python_doc_quote {
+    padding: 1.5rem 0;
+}
+
+.python_doc_quote h2 {
+    color: #caccce;
+    font-weight: 400;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 23px;
+}
+
+.python_doc_quote a {
+    color: #ffd343;
+    font-size: 23px;
+    text-decoration: underline;
+}
