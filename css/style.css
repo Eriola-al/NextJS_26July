@@ -1,194 +1,152 @@
-body {
-    font-family: Arial, sans-serif;
+/* variables declared here - these are the colors for our main page, as well as the font stacks and sizes. */
+:root {
+    --darkGunmetal: #1E2933;
+    --darkJungleGreen: #192127;
+    --dandelion: #FFDC67;
+    --queenBlue: #3572a5;
+    --brightGray: #e6e8ea;
+    --spaceCadet: #1C3B56;
+    --gargoyleGas: #FFD343;
+    --iceberg: #75A8D3;
+    --lotion: #FCFCFC;
+    --outerSpace: #444444;
+    --steelBlue: #3776ab;
+    --jasmine: #ffe079;
+    --graniteGray: #666666;
+    --gainsboro: #dde0e2 ;
+    --nickel: #737373;
+    --lightCobaltBlue: #89b4d9;
+    --fontSize: 16px;
+    --sans: 'Source Sans Pro', sans-serif;
+    --default-border-color: #273643;
+    --border-bottom-color: #070a0c;
+    --border-right-color: #11171d;
+    --psf-hover-color: #78797a;
+    --pypl-hover-color: #82b043;
+    --jobs-hover-color: #a06ba7;
+    --community-hover-color: #b55863;
+    --gradient-start: #13191e;
+    --gradient-end: #1f2a32;
+    --menu-background-start: #1e415e;
+    --menu-background-end: #2b5b84;
+    --hover-text-color: #999;
+    --gradient-background: linear-gradient(180deg, rgba(30, 64, 93, 1) 0%, rgba(43, 90, 131, 1) 100%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+*{
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
+    font-size: var(--fontSize);
+    font-family: var(--sans);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+header{
+    background-color: var(--darkGunmetal);
+    border-bottom: 1px solid var(--border-bottom-color);
 }
 
-header {
-    background-color: #4b8bbe;
-    color: white;
-    padding: 10px 0;
-}
-
-.header-left, .header-right {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-left {
-    width: 70%;
-}
-
-.header-right {
-    width: 28%;
-    text-align: right;
-}
-
-.logo {
-    width: 140px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.main-nav {
-    display: inline-block;
-}
-
-.nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-}
-
-.nav-links li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.search-form {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.search-form input[type="text"] {
-    padding: 5px;
-    font-size: 14px;
-    border: none;
-    border-radius: 3px;
-}
-
-.search-form button {
-    padding: 5px 10px;
-    background-color: #306998;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.hero {
-    background-color: #306998;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.cta {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #ffde57;
-    color: #306998;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.highlights {
-    padding: 50px 0;
-    background-color: #f6f6f6;
-    text-align: center;
-}
-
-.highlights .highlight {
-    display: inline-block;
-    width: 30%;
-    margin: 0 1.5%;
-    vertical-align: top;
-}
-
-.highlight h2 {
-    font-size: 24px;
-    color: #306998;
-    margin-bottom: 10px;
-}
-
-.highlight p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #306998;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.news {
-    padding: 50px 0;
-}
-
-.news h2 {
-    font-size: 28px;
-    color: #306998;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.news-items {
+header .container{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    list-style-type: none;
+}
+header .container li{
+    padding: 12px;
+    border-left: 1px solid var(--default-border-color);
+    border-right: 1px solid var(--border-right-color);
+    text-align: center;
+    border-top: 3px solid transparent;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
 }
 
-.news-item {
-    width: 30%;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+header .container li::before{
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-top:7px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    transition: 0.1s ease all;
+}
+.Python::before{
+    border-top-color: var(--steelBlue) !important;
+}
+.PSF:hover::before{
+    border-top-color: var(--psf-hover-color) !important;
+}
+.Docs:hover::before{
+    border-top-color: var(--gargoyleGas) !important;
+}
+.PyPl:hover::before{
+    border-top-color: var(--pypl-hover-color) !important;
+}
+.Jobs:hover::before{
+    border-top-color: var(--jobs-hover-color) !important;
+}
+.Community:hover::before{
+    border-top-color: var(--community-hover-color) !important;
 }
 
-.news-item h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+
+.Python{
+    border-top-color: var(--steelBlue) !important;
+    background-image: linear-gradient(var(--gradient-start) 10%, var(--gradient-end) 90%);
 }
 
-.news-item h3 a {
-    color: #306998;
+.PSF {
+    border-top-color: var(--psf-hover-color) !important;
+}
+
+.Docs {
+    border-top-color: var(--gargoyleGas) !important;
+}
+
+.PyPl {
+    border-top-color: var(--pypl-hover-color) !important;
+}
+
+.Jobs {
+    border-top-color: var(--jobs-hover-color) !important;
+}
+
+.Community {
+    border-top-color: var(--community-hover-color) !important;
+}
+
+header .container li:hover {
+    background-image: linear-gradient(var(--gradient-start) 10%, var(--gradient-end) 90%);
+}
+
+header .container li a {
+    color: var(--hover-text-color);
     text-decoration: none;
 }
 
-.news-item p {
-    font-size: 14px;
-    color: #666;
+header .container li:first-child a {
+    color: var(--brightGray);
 }
 
-footer {
-    background-color: #4b8bbe;
-    color:
+header .container li a:hover {
+    color: var(--brightGray);
+}
+
+.header-nav {
+    max-width: 1220px;
+    margin: auto;
+}
