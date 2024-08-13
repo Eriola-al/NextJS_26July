@@ -186,6 +186,12 @@ nav [class*="fa-"] {
   color: var(--fernGreen);
 }
 
+button.theme-button #theme-icon {
+  font-size: 130%;
+  color: var(--fernGreen);
+  mix-blend-mode: multiply;
+}
+
 nav h1 [class*="fa-"] {
   font-size: 100%;
   color: var(--mikeWazowskiGreen);
@@ -234,15 +240,32 @@ footer ul {
   font-size: 2rem;
 }
 
+/* Toggle Icon Styles */
+
+#theme-icon {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: var(--black); 
+  font-size: 1rem; 
+  line-height: 1;
+}
+
+#theme-icon:hover {
+  cursor: pointer;
+  color: var(--fernGreen); 
+}
+
 /* Dark Theme Styles */
 .dark-theme {
-  --maniacMansion: #171321;  /* Darker background */
-  --castletonGreen: #025951;  /* Dark shade */
-  --tropicalRainforest: #02735E;  /* Darker sections */
-  --fernGreen: #038C3E;  /* Link hover */
-  --mikeWazowskiGreen: #0CF25D;  /* Highlighting */
-  --white: #f7f8fa;  /* Text color */
-  --black: #000000;  /* Card background */
+  --maniacMansion: #171321;  
+  --castletonGreen: #025951; 
+  --tropicalRainforest: #02735E;  
+  --fernGreen: #038C3E; 
+  --mikeWazowskiGreen: #0CF25D;  
+  --white: #f7f8fa;  
+  --black: #000000;  
 }
 
 .dark-theme body {
@@ -250,6 +273,9 @@ footer ul {
   color: var(--white);
 }
 
+body.dark-theme a:hover {
+  color: var(--fernGreen); 
+}
 .dark-theme a {
   color: var(--fernGreen);
 }
@@ -287,6 +313,7 @@ footer ul {
 }
 
 .dark-theme .button:hover {
+  color: var(--white);
   background-color: var(--mikeWazowskiGreen);
 }
 

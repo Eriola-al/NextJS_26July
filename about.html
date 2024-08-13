@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script defer src="./index.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                 <h1>
                     <a href="index.html">
                         <span class="fa-brands fa-staylinked" aria-hidden="true"></span>
-                        <span>Eriola Ndoj</span>
+                        <span>Name Surname</span>
                     </a>
                 </h1>
             </li>
@@ -27,19 +28,24 @@
             <li><a href="about.html">About</a></li>
             <li><a href="index.html#contact">Contact</a></li>
             <li>
-                <a href="https://al.linkedin.com/in/eriola-ndoj-012b61212" target="_blank">
+                <a href="" target="_blank">
                     <span class="fab fa-linkedin" aria-hidden="true"></span>
                     <span class="sr-only">LinkedIn</span>
                 </a>
             </li>
             <li>
-                <a href="https://github.com/Eriola-al" target="_blank">
+                <a href="" target="_blank">
                     <span class="fab fa-github-square" aria-hidden="true"></span>
                     <span class="sr-only">Github</span>
                 </a>
             </li>
-            <li><a href="https://www.dropbox.com/s/3z2hm5gu3v2lrfy/JenKramerCV.pdf?dl=0" target="_blank"
+            <li><a href="" target="_blank"
                     class="button">Resume</a></li>
+            <li>
+                <button id="theme-toggle" class="theme-button">
+                    <i id="theme-icon" class="fas fa-sun"></i>
+                </button>
+            </li>
         </ul>
     </nav>
 
@@ -49,24 +55,21 @@
         <section id="projects">
             <h2>About</h2>
             <article>
-                <img src="img/me.JPG" alt="Picture of me."/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEsCAYAAADtt+XCAAAAAXNSR0IArs4c6QAAFx5JREFUeF7t3WWv6zYABuDeMTMzg/b//8W+jpmZmae3Uq5yvbRJfU7q+u6pNE3TqWP3sec3cejCiy+++M/GhwABAgQIHChwQYAcKObrBAgQILAVECAGAgECBAhUCQiQKjaFCBAgQECAGAMECBAgUCUgQKrYFCJAgAABAWIMECBAgECVgACpYlOIAAECBASIMUCAAAECVQICpIpNIQIECBAQIMYAAQIECFQJCJAqNoUIECBAQIAYAwQIECBQJSBAqtgUIkCAAAEBYgwQIECAQJWAAKliU4gAAQIEBIgxQIAAAQJVAgKkik0hAgQIEBAgxgABAgQIVAkIkCo2hQgQIEBAgBgDBAgQIFAlIECq2BQiQIAAAQFiDBAgQIBAlYAAqWJTiAABAgQEiDFAgAABAlUCAqSKTSECBAgQECDGAAECBAhUCQiQKjaFCBAgQECAGAMECBAgUCUgQKrYFCJAgAABAWIMECBAgECVgACpYlOIAAECBASIMUCAAAECVQICpIpNIQIECBAQIMYAAQIECFQJCJAqNoUIECBAQIAYAwQIECBQJSBAqtgUIkCAAAEBYgwQIECAQJWAAKliU4gAAQIEBIgxQIAAAQJVAgKkik0hAgQIEBAgxgABAgQIVAkIkCo2hQgQIEBAgBgDBAgQIFAlIECq2BQiQIAAAQFiDBAgQIBAlYAAqWJTiAABAgQEiDFAgAABAlUCAqSKTSECBAgQECDGAAECBAhUCQiQKjaFCBAgQECAGAMECBAgUCUgQKrYFCJAgAABAWIMECBAgECVgACpYlOIAAECBASIMUCAAAECVQICpIpNIQIECBAQIMYAAQIECFQJCJAqNoUIECBAQIAYAwQIECBQJSBAqtgUIkCAAAEBYgwQIECAQJWAAKliU4gAAQIEBIgxQIAAAQJVAgKkik0hAgQIEBAgxgABAgQIVAkIkCo2hQgQIEBAgBgDBAgQIFAlIECq2BQiQIAAAQFiDBAgQIBAlYAAqWJTiAABAgQEiDFAgAABAlUCAqSKTSECBAgQECDGAAECBAhUCQiQKjaFCBAgQECAGAMECBAgUCUgQKrYFCJAgAABAWIMECBAgECVgACpYlOIAAECBASIMUCAAAECVQICpIpNIQIECBAQIMYAAQIECFQJCJAqNoUIECBAQIAYAwQIECBQJSBAqtgUIkCAAAEBYgwQIECAQJWAAKliU4gAAQIEBIgxQIAAAQJVAgKkik0hAgQIEBAgxgABAgQIVAkIkCo2hQgQIEBAgBgDBAgQIFAlIECq2BQiQIAAAQFiDBAgQIBAlYAAqWJTiAABAgQEiDFAgAABAlUCAqSKTSECBAgQECDGAAECBAhUCQiQKjaFCBAgQECAGAMECBAgUCUgQKrYFCJAgAABAWIMECBAgECVgACpYlOIAAECBASIMUCAAAECVQICpIpNIQIECBAQIMYAAQIECFQJCJAqNoUIECBAQIAYAwQIECBQJSBAqtgUIkCAAAEBYgwQIECAQJWAAKliU4gAAQIEBIgxQIAAAQJVAgKkik0hAgQIEBAgxgABAgQIVAkIkCo2hQgQIEBAgBgDBAgQIFAlIECq2BQiQIAAAQFiDBAgQIBAlYAAqWJTiAABAgQEiDFAgAABAlUCAqSKTSECBAgQECDGAAECBAhUCQiQKjaFCBAgQECAGAMECBAgUCUgQKrYFCJAgAABAWIMECBAgECVgACpYlOIAAECBASIMUCAAAECVQICpIpNIQIECBAQIMYAAQIECFQJCJAqNoUIECBAQID8D8fAU089tbn11lu3v/yPP/7YvPPOO5sffvhhscSdd965ueuuuzbXX3/95sorr7xY7q+//tr89NNPmy+++GLz7bffLt7e8MUbb7xxc88992xuvvnmzVVXXbW5cOHC9k9///335rffftt8/fXX222nnsvxc9ttt23uvvvuzQ033LB1HX5/fu/vv/+++eqrrzafffZZ1U+/9957N+m3a6+9dnPFFVdst/HPP/9sLdP3cT1kDAyNWGssVP1IhY4uIECOTt62wgceeGCTyWSYRA4JkGuuuWbzyCOPbG655ZaLk9vUr8nE9P3332/ef//97cS35JN2JTzGgTRVLkHy4YcfVgXUkna0+M511123efjhh7fBOYTGrnbk93/88cfbMF3ySShn2/n3vk9COtuM7ZKAXnMsLPldvnMaAgLkNPrhKK3IBPXYY49t8j//8FkaIJnkHn300c1NN920uK0//vjj5r333tv8+uuve8sklLInO4TaXAVpcya6pZPo3PZa/j2uTzzxxPZobuknE/xHH320PWrY90l/xzZ1LPkk+HPk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" alt="Picture of me." />
                 <div class="text">
                     <h3>Highlights</h3>
-                    <p class="blackbox">Eriola is a frontend engineer with expertise in modern web technologies.
-                        Passionate about crafting engaging user experiences, she thrives in creating dynamic and
-                        innovative web applications. With a keen eye for detail and a commitment to excellence, she
-                        brings creativity and technical skill to every project she undertakes.
-                    </p>
-                    <h4>Technologies and skills mastered include:</h4>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>React.js</li>
-                        <li>HTML & CSS</li>
-                        <li>ANT Design</li>
-                        <li>Git</li>
-                        <li>Jira</li>
-                    </ul>
+                    <p class="blackbox">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                      <h4>Technologies and libraries used include:</h4>
+                      <ul>
+                        <li>Tech1</li>
+                        <li>Tech2</li>
+                        <li>Tech3</li>
+                        <li>Lib1</li>
+                        <li>Lib2</li>
+                      </ul>
                 </div>
             </article>
         </section>
@@ -75,22 +78,22 @@
     <div class="section-gradient-divider"></div>
 
     <footer>
-        <h2>Eriola Ndoj &middot; Web Engineer</h2>
+        <h2>Name Surname &middot; Your Profession</h2>
         <ul>
             <li>
-                <a href="https://al.linkedin.com/in/eriola-ndoj-012b61212" target="_blank">
+                <a href="" target="_blank">
                     <span class="fab fa-linkedin" aria-hidden="true"></span>
                     <span class="sr-only">LinkedIn</span>
                 </a>
             </li>
             <li>
-                <a href="https://github.com/Eriola-al" target="_blank">
+                <a href="" target="_blank">
                     <span class="fab fa-github-square" aria-hidden="true"></span>
                     <span class="sr-only">Github</span>
                 </a>
             </li>
             <li>
-                <a href="mailto:endoj22@gmail.com">
+                <a href="mailto:yourEmail@gmail.com">
                     <span class="fas fa-envelope" aria-hidden="true"></span>
                     <span class="sr-only">Email</span>
                 </a>
