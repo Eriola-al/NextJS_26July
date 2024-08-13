@@ -186,12 +186,6 @@ nav [class*="fa-"] {
   color: var(--fernGreen);
 }
 
-button.theme-button #theme-icon {
-  font-size: 130%;
-  color: var(--fernGreen);
-  mix-blend-mode: multiply;
-}
-
 nav h1 [class*="fa-"] {
   font-size: 100%;
   color: var(--mikeWazowskiGreen);
