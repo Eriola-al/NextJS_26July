@@ -1,10 +1,9 @@
+
+
 const withdraw = (person, amount) => {
-    if (amount > person.balance) {
-        console.log("Withdrawal cannot be processed due to insufficient funds.")
-    } else {
-        person.balance -= amount;
-        console.log(`Please withdraw your money. Current balance is ${person.balance}.`)
-    }
+    return amount > person.balance ? console.log("Withdrawal cannot be processed due to insufficient funds.")
+        :
+        console.log(`Please withdraw your money. Current balance is ${person.balance -= amount}.`)
 }
 
 const myPerson = {
